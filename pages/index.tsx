@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { Text } from '@chakra-ui/react'
 
 const Home: NextPage = () => {
   return (
@@ -13,9 +14,23 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
+        <h1 style={{
+          fontFamily: 'Nunito'
+        }}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
+        <Text fontWeight={'200'}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </Text>
+        <Text fontWeight={'300'}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </Text>
+        <Text fontWeight={'500'}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </Text>
+        <Text fontWeight={'700'}>
+          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        </Text>
 
         <p className={styles.description}>
           Get started by editing{' '}
