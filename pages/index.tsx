@@ -22,8 +22,8 @@ const Home: NextPage = () => {
         <Text fontWeight={'200'}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </Text>
-        <Text fontWeight={'300'}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+        <Text color='blue.100' fontWeight={'300'}>
+          Welcome to <a href="https://nextjs.org">blue.js!</a>
         </Text>
         <Text fontWeight={'500'}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
