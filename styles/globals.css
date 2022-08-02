@@ -24,3 +24,36 @@ a {
     background: black;
   }
 }
+
+/* Menu Bar Hamburger - Dropdown */
+#toggle {
+  position:absolute;
+  appearance:none;
+  cursor:pointer;
+  left:-100%;
+  top:-100%;
+}
+
+.drop {
+  position: absolute;
+  top: -250px;
+  left: 0;
+  right: 0; 
+  transition: top 0.5s cubic-bezier(0.17, 0.04, 0.03, 0.94);
+  z-index: 0;
+  background: white;
+}
+
+#toggle + label:after {
+  content:"Open" 
+}
+
+#toggle:checked ~ .drop {
+  top: 5rem;
+}
+
+#toggle:checked + label:after {
+  content:"Close"
+}
+
+/* End */
