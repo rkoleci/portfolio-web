@@ -8,6 +8,7 @@ import {
   Input,
   HStack,
   VStack,
+  useColorMode,
 } from "@chakra-ui/react";
 import { MoonIcon, HamburgerIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
@@ -66,6 +67,8 @@ const Links = () => (
 );
 
 export default function () {
+  const { colorMode, toggleColorMode } = useColorMode();
+  
   return (
     <Box pos="relative">
       <Flex
@@ -104,29 +107,31 @@ export default function () {
                 cursor: "pointer",
               }}
               mr="8"
+              onClick={toggleColorMode}
             >
-              <MoonIcon color="black.100" />
+              <MoonIcon color={colorMode === 'light' ? 'black.100': 'white.100'} />
             </Box>
             <Links />
           </Stack>
         </Box>
 
-        <Box display={["block", "none"]}>
+        <Box display={["block", "block", "none"]}>
           <Box
             _hover={{
               cursor: "pointer",
             }}
             display="inline-block"
             mr="4"
+            onClick={toggleColorMode}
           >
-            <MoonIcon color="black.100" />
+            <MoonIcon color={colorMode === 'light' ? 'black.100': 'white.100'} />
           </Box>
           <input type="checkbox" name="toggle" id="toggle" />
           <label for="toggle">
             <HamburgerIcon fontSize="2xl" />
           </label>
 
-          <Box className="drop" id="dropdown" p="2" pb='6'>
+          <Box className="drop" id="dropdown" p="2" pb="6">
             <VStack spacing={4}>
               <Links />
             </VStack>
