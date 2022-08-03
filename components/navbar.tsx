@@ -9,6 +9,7 @@ import {
   HStack,
   VStack,
   useColorMode,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { MoonIcon, HamburgerIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
@@ -68,7 +69,8 @@ const Links = () => (
 
 export default function () {
   const { colorMode, toggleColorMode } = useColorMode();
-  
+  const bg = useColorModeValue('gray.200', 'primary.100')
+
   return (
     <Box pos="relative">
       <Flex
@@ -76,7 +78,7 @@ export default function () {
         alignItems="center"
         as="nav"
         p="6"
-        bg="gray.200"
+        bg={bg}
         zIndex="2000"
         maxH="5rem"
       >
@@ -92,6 +94,8 @@ export default function () {
             pl="2"
             pr="2"
             borderRadius="4"
+            as='a'
+            href='/'
           >
             R
           </Text>
