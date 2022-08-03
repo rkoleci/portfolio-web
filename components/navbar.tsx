@@ -12,38 +12,56 @@ import {
 import { MoonIcon, HamburgerIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 
+const MenuLink = ({ path, label }: { path: string; label: string }) => (
+  <NextLink href={`/${path}`} passHref>
+    <Link color="primary.100" fontWeight="500">
+      <Text
+        _hover={{
+          textDecor: "underline",
+        }}
+        borderBottomWidth="1px"
+        borderBottomColor="primary.100"
+      >
+        {label}
+      </Text>
+    </Link>
+  </NextLink>
+);
+
 const Links = () => (
   <>
-    <NextLink href="/home" passHref>
-      <Link color="primary.100" fontWeight="500">
-        Home
-      </Link>
-    </NextLink>
-    <NextLink href="/home" passHref>
-      <Link color="primary.100" fontWeight="500">
-        About me
-      </Link>
-    </NextLink>
-    <NextLink href="/home" passHref>
-      <Link color="primary.100" fontWeight="500">
-        Blog
-      </Link>
-    </NextLink>
-    <NextLink href="/home" passHref>
-      <Link color="primary.100" fontWeight="500">
-        Experience
-      </Link>
-    </NextLink>
-    <NextLink href="/home" passHref>
-      <Link color="primary.100" fontWeight="500">
-        Projects
-      </Link>
-    </NextLink>
-    <NextLink href="/home" passHref>
-      <Link color="primary.100" fontWeight="500">
-        Contact
-      </Link>
-    </NextLink>
+    {[
+      {
+        path: "home",
+        label: "Home",
+      },
+      {
+        path: "about",
+        label: "About me",
+      },
+      {
+        path: "blog",
+        label: "Blog",
+      },
+      {
+        path: "experience",
+        label: "Experience",
+      },
+      {
+        path: "home",
+        label: "Home",
+      },
+      {
+        path: "projects",
+        label: "Projects",
+      },
+      {
+        path: "contact",
+        label: "Contact",
+      },
+    ].map((item) => (
+      <MenuLink {...item} />
+    ))}
   </>
 );
 
@@ -57,7 +75,7 @@ export default function () {
         p="6"
         bg="gray.200"
         zIndex="2000"
-        maxH='5rem'
+        maxH="5rem"
       >
         <Box as={Flex} alignItems="center">
           <Text
@@ -94,12 +112,24 @@ export default function () {
         </Box>
 
         <Box display={["block", "none"]}>
+          <Box
+            _hover={{
+              cursor: "pointer",
+            }}
+            display="inline-block"
+            mr="4"
+          >
+            <MoonIcon color="black.100" />
+          </Box>
           <input type="checkbox" name="toggle" id="toggle" />
-          <label for="toggle"></label>
-          <Box className="drop" id="dropdown">
-           <VStack>
-           <Links />
-           </VStack>
+          <label for="toggle">
+            <HamburgerIcon fontSize="2xl" />
+          </label>
+
+          <Box className="drop" id="dropdown" p="2" pb='6'>
+            <VStack spacing={4}>
+              <Links />
+            </VStack>
           </Box>
         </Box>
       </Flex>

@@ -36,7 +36,7 @@ a {
 
 .drop {
   position: absolute;
-  top: -250px;
+  top: -350px;
   left: 0;
   right: 0; 
   transition: top 0.5s cubic-bezier(0.17, 0.04, 0.03, 0.94);
@@ -44,16 +44,12 @@ a {
   background: white;
 }
 
-#toggle + label:after {
-  content:"Open" 
+#toggle + label {
+  cursor: pointer;
 }
 
 #toggle:checked ~ .drop {
   top: 5rem;
-}
-
-#toggle:checked + label:after {
-  content:"Close"
 }
 
 /* End */
