@@ -20,8 +20,12 @@ export default function GridList<T>({
       }}
       width="full"
     >
-      {data.map((item: T) => (
-        <ListItem {...item} onItemClick={() => onItemClick(item)} />
+      {data.map((item: T & { id?: string }) => (
+        <ListItem
+          key={item.id?.toString()}
+          {...(item as T)}
+          onItemClick={() => onItemClick(item)}
+        />
       ))}
     </Grid>
   );
