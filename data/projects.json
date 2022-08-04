@@ -14,7 +14,7 @@
   {
     "id": 2,
     "company": "Atrax",
-    "title": "Post 1",
+    "title": "Post 2",
     "contributions": [
       "Designing and building new components",
       "Writing unit tests using Jest",
@@ -26,7 +26,7 @@
   {
     "id": 3,
     "company": "Atrax",
-    "title": "Post 1",
+    "title": "Post 3",
     "contributions": [
       "Designing and building new components",
       "Writing unit tests using Jest",
