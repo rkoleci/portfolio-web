@@ -50,10 +50,6 @@ const Links = () => (
         label: "Experience",
       },
       {
-        path: "home",
-        label: "Home",
-      },
-      {
         path: "projects",
         label: "Projects",
       },
