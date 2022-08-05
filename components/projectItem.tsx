@@ -71,11 +71,12 @@ export default function ProjectListItem({
         <HStack mb="4">
           {skills.map((item: string) => (
             <Tag
-              size="lg"
+              size="md"
+              fontSize='12'
               variant="solid"
               borderRadius="16px"
               colorScheme={colorScheme[item as ColorSchemeKey]}
-              opacity="0.6"
+              opacity="0.5"
             >
               {item}
             </Tag>
