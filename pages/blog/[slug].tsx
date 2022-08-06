@@ -1,22 +1,26 @@
-import { GetStaticPaths, GetStaticProps } from "next";
+import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { ParsedUrlQuery } from "querystring";
 
 interface IParams extends ParsedUrlQuery {
   slug: string;
 }
 
-export const getStaticProps: GetStaticProps = (context) => {
+export const getStaticProps: GetStaticProps = async (context) => {
   const { slug } = context.params as IParams;
+  const blogs = (await import("../../data/blog.json")).default;
+  const blog = blogs.find((x) => x.id === slug);
 
   return {
     props: {
-      id: slug,
+      title: blog?.title,
     },
   };
 };
 
-export default function Article() {
-  return <p>Article</p>;
+export default function Article({
+  title,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
+  return <p>Article {title}</p>;
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
