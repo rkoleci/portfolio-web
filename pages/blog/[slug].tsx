@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
-import { ParsedUrlQuery, unescape } from "querystring";
+import { ParsedUrlQuery } from "querystring";
 
 interface IParams extends ParsedUrlQuery {
   slug: string;
