@@ -53,3 +53,11 @@ a {
 }
 
 /* End */
+
+/* Contact Form Input */  
+.contact-input::placeholder {
+  color: #9CA3AF;
+  font-weight: 600;
+  font-size: 18px;
+  opacity: 0.8;
+}
