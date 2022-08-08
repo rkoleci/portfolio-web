@@ -1,63 +1,56 @@
 [
-    {
-      "id": 1,
-      "company": "Atrax",
-      "title": "Post 1",
-      "contributions": [
-        "Designing and building new components",
-        "Writing unit tests using Jest",
-        "Using Redux to manage state"
-      ],
-      "skills": ["Reactjs", "Typescript", "GCP"],
-      "link": "https://www.gethalal.dev"
-    },
-    {
-      "id": 2,
-      "company": "Atrax",
-      "title": "Post 2",
-      "contributions": [
-        "Designing and building new components",
-        "Writing unit tests using Jest",
-        "Using Redux to manage state"
-      ],
-      "skills": ["Reactjs", "Typescript", "GCP"],
-      "link": "www.gethalal.dev"
-    },
-    {
-      "id": 3,
-      "company": "Atrax",
-      "title": "Post 3",
-      "contributions": [
-        "Designing and building new components",
-        "Writing unit tests using Jest",
-        "Using Redux to manage state"
-      ],
-      "skills": ["Reactjs", "Typescript", "GCP"],
-      "link": ""
-    },
-    {
-      "id": 1,
-      "company": "Atrax",
-      "title": "Post 1",
-      "contributions": [
-        "Designing and building new components",
-        "Writing unit tests using Jest",
-        "Using Redux to manage state"
-      ],
-      "skills": ["Reactjs", "Typescript", "GCP"],
-      "link": ""
-    },
-    {
-      "id": 4,
-      "company": "Atrax",
-      "title": "Post 1",
-      "contributions": [
-        "Designing and building new components",
-        "Writing unit tests using Jest",
-        "Using Redux to manage state"
-      ],
-      "skills": ["Reactjs", "Typescript", "GCP"],
-      "link": ""
-    }
-  ]
-  
+  {
+    "id": 1,
+    "company": "Atrax",
+    "companyURL": "https://www.atrax.com",
+    "title": "Software Engineer Level-3 (Remote)",
+    "roles": [
+      "Designing and building new components",
+      "Writing unit tests using Jest",
+      "Using Redux to manage state"
+    ],
+    "accomplishments": [
+      "Designing and building new components",
+      "Writing unit tests using Jest",
+      "Using Redux to manage state"
+    ],
+    "skills": ["Reactjs", "Typescript", "GCP"],
+    "link": "https://www.gethalal.dev"
+  },
+  {
+    "id": 2,
+    "company": "Atrax",
+    "companyURL": "https://www.atrax.com",
+    "title": "Software Engineer Level-3 (Remote)",
+    "roles": [
+      "Designing and building new components",
+      "Writing unit tests using Jest",
+      "Using Redux to manage state"
+    ],
+    "accomplishments": [
+      "Designing and building new components",
+      "Writing unit tests using Jest",
+      "Using Redux to manage state"
+    ],
+    "skills": ["Reactjs", "Typescript", "GCP"],
+    "link": "https://www.gethalal.dev"
+  },
+  {
+    "id": 3,
+    "company": "Atrax",
+    "companyURL": "https://www.atrax.com",
+    "title": "Software Engineer Level-3 (Remote)",
+    "roles": [
+      "Designing and building new components",
+      "Writing unit tests using Jest",
+      "Using Redux to manage state"
+    ],
+    "accomplishments": [
+      "Designing and building new components",
+      "Writing unit tests using Jest",
+      "Using Redux to manage state"
+    ],
+    "skills": ["Reactjs", "Typescript", "GCP"],
+    "link": "https://www.gethalal.dev"
+  }
+]

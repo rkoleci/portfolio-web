@@ -6,7 +6,7 @@ interface ProjectItemProps extends ProjectItem {
   onItemClick: () => void;
 }
 
-const colorScheme = {
+export const colorScheme = {
   Reactjs: "blue",
   Typescript: "teal",
   Nextjs: "yellow",
@@ -14,7 +14,7 @@ const colorScheme = {
   ChakraUI: "gray",
 };
 
-type ColorSchemeKey = keyof typeof colorScheme;
+export type ColorSchemeKey = keyof typeof colorScheme;
 
 export default function ProjectListItem({
   title,

@@ -9,7 +9,7 @@ import { getJson } from "../utils";
 export const getStaticProps: GetStaticProps = async () => {
   return {
     props: {
-      projects: await getJson("data/projects.json"),//api call
+      projects: await getJson("data/projects.json")
     },
   };
 };
