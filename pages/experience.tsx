@@ -1,4 +1,4 @@
-import { Container, Center, Text, Box } from "@chakra-ui/react";
+import { Container, Center, Text, Stack } from "@chakra-ui/react";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 
 import ExperienceListItem from "../components/experienceItem";
@@ -20,15 +20,15 @@ export default function Experience({
   return (
     <Container p="4">
       <Center>
-        <Text color="primary.100" fontSize="3xl" fontWeight="900">
+        <Text color="primary.100" fontSize="3xl" fontWeight="900" mb='8'>
           My Experiences
         </Text>
       </Center>
-      <Box>
+      <Stack>
         {experiences.map((item: ExperienceItem) => (
-          <ExperienceListItem key={item.id} {...item} />
+           <ExperienceListItem key={item.id} {...item} mb='8'  />
         ))}
-      </Box>
+      </Stack>
     </Container>
   );
 }
