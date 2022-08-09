@@ -1,8 +1,8 @@
 import { Box, Text, Flex, HStack, Stack, Tag, Link } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
-import { ExperienceItem } from "../pages/experience";
-import { colorScheme, ColorSchemeKey } from "./projectItem";
+import { ExperienceItem } from "pages/experience";
+import { colorScheme, ColorSchemeKey } from "components/projectItem";
 
 export default function ExperienceListItem({
   title,
