@@ -8,14 +8,19 @@ import {
   Textarea,
   FormLabel,
   FormControl,
+  Link,
 } from "@chakra-ui/react";
 
 export default function ContactPage() {
+  const actionUrl =
+    typeof window === "undefined"
+      ? "mailto:rkoleci14@gmail.com"
+      : `mailto:rkoleci14@gmail.com?subject=${
+          window.document.getElementsByName("name")[0]
+        }&body=${window.document.getElementsByName("message")[0]}`;
+
   return (
-    <form
-      action="mailto:rkoleci14@gmail.com"
-      method="post"
-    >
+    <form action={actionUrl} method="post">
       <Container position="relative" height="80vh">
         <Box
           left="50%"
@@ -50,6 +55,7 @@ export default function ContactPage() {
                   Name
                 </FormLabel>
                 <Input
+                  name="name"
                   placeholder="What should I call you?"
                   bg="gray.200"
                   color="primary.100"
@@ -77,6 +83,7 @@ export default function ContactPage() {
                   Email
                 </FormLabel>
                 <Input
+                  name="email"
                   placeholder="How can I reach you?"
                   bg="gray.200"
                   color="primary.100"
@@ -105,6 +112,7 @@ export default function ContactPage() {
                 Message
               </FormLabel>
               <Textarea
+                name="message"
                 placeholder="....."
                 bg="gray.200"
                 color="primary.100"
