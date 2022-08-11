@@ -11,8 +11,16 @@ export default function ExperienceListItem({
   roles,
   skills,
   accomplishments,
+  time: { start, end },
   ...rest
 }: ExperienceItem) {
+  const dateFormat = (timestamp: number) => {
+    return new Date(timestamp * 1000).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+    });
+  };
+
   return (
     <Box
       borderLeftWidth="2px"
@@ -34,7 +42,7 @@ export default function ExperienceListItem({
       <Text color="primary.100" fontSize="24" fontWeight="900" mb="2">
         Software Engineer Level-3 (Remote)
       </Text>
-      <Text color="primary.100" fontSize="18" fontWeight="500" mb="2">
+      <Text color="primary.100" fontSize="18" fontWeight="500" mb="3">
         Cruise LLC -{" "}
         <Link
           target="_blank"
@@ -47,12 +55,12 @@ export default function ExperienceListItem({
           {companyURL}
         </Link>
       </Text>
-      <Text color="gray.600" fontSize="14" fontWeight="600" mb="2">
-        March 2022 - Present
+      <Text color="gray.600" fontSize="14" fontWeight="600" ms="1" mb="3">
+        {`${dateFormat(start)} - ${ dateFormat(end)}`}
       </Text>
 
       <Text color="primary.100" fontSize="20" fontWeight="600" mb="2">
-        Skills
+        Roles
       </Text>
       <Stack mb="4">
         {skills.map((item: string) => (
@@ -86,7 +94,7 @@ export default function ExperienceListItem({
       <HStack mb="4">
         {skills.map((item: string) => (
           <Tag
-            size="md"
+            size="lg"
             fontSize="12"
             variant="solid"
             borderRadius="16px"
