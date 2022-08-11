@@ -71,7 +71,7 @@ export default function ProjectListItem({
         <HStack mb="4">
           {skills.map((item: string) => (
             <Tag
-              size="md"
+              size="lg"
               fontSize='12'
               variant="solid"
               borderRadius="16px"
