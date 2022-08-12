@@ -16,18 +16,23 @@ export default function Home() {
           md: "200px",
         }}
         objectFit="cover"
-        src={'https://www.mohammadfaisal.dev/_next/image?url=%2Fstatic%2Fprofile.png&w=640&q=75'}
+        src={
+          "https://www.mohammadfaisal.dev/_next/image?url=%2Fstatic%2Fprofile.png&w=640&q=75"
+        }
         alt="Rei Koleci"
         borderRadius="100%"
-      /> 
-      <Text color="primary.100" fontWeight="900" fontSize="48">
+      />
+      <Text color="primary.100" fontWeight="900" fontSize="48" mb="4">
         Hi, I'm Rei Koleci
       </Text>
-      <Text color="primary.100" fontWeight="800" fontSize="30">
-        Software Engineer
-      </Text>
+      <Text
+        color="primary.100"
+        fontWeight="800"
+        fontSize="30"
+        className="home-text-anim home-text-anim-2"
+      />
       <Text color="primary.100" fontWeight="600" fontSize="18">
-        ReactJS | NodeJS | AWS
+        Typescript | Graphql | Rest
       </Text>
       <Button
         px="5rem"
@@ -42,6 +47,7 @@ export default function Home() {
         rightIcon={<ArrowForwardIcon />}
         as="a"
         href="/about"
+        mb="8"
       >
         Know more about me
       </Button>
