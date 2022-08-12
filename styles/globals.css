@@ -61,3 +61,55 @@ a {
   font-size: 18px;
   opacity: 0.8;
 }
+
+/* Home Text Animation */
+
+.home-text-anim {
+  animation: anim 2s linear infinite forwards;
+  font-size: 20px;
+}
+.home-text-anim::after {
+  content: ''
+}
+
+.home-text-anim-2::after {
+  animation: changeLetter 3s linear infinite alternate;
+  animation-delay: 0s;
+}
+
+@keyframes anim {
+    0% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+    20% {
+      transform: translateY(-20px);
+      opacity: 1;
+    }
+    40% {
+      transform: translateY(-40px);
+    }
+    60% {
+      transform: translateY(-60px);
+      opacity: 0;
+    }
+    80% {
+      transform: translateY(-80px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes changeLetter {
+    0% {
+      content: "ReactJS";
+    }
+    50% {
+      content: "NextJS";
+    }
+    100% {
+      content: "RemixRun";
+    } 
+  }
