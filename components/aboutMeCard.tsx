@@ -1,11 +1,16 @@
-import { Text, Link, Image, HStack } from "@chakra-ui/react";
+import { Grid, Text, Link, Image, HStack } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaGithubSquare, FaInstagramSquare } from "react-icons/fa";
 
 export default function AboutMeCard() {
   return (
-    <>
+    <Grid
+      maxWidth="300px"
+      display="grid"
+      gridTemplateColumns="1fr"
+      justifyItems="center"
+    >
       <Image
         boxSize={{
           sm: "150px",
@@ -31,12 +36,18 @@ export default function AboutMeCard() {
       <Text
         color="gray.100"
         fontSize="16"
-        fontWeight="400"
+        fontWeight="500"
         mb="4"
         textAlign="center"
+        lineHeight="1.3"
+        overflowWrap="break-word"
       >
-        Hi, I amMohammad Faisal, A full-stack software engineer{" "}
-        <Text as="span" color="blue.600" fontWeight="700" fontSize="16">
+        Hi, I am{" "}
+        <Text as="span" color="black.400" fontWeight="800" fontSize="16">
+          Rei Koleci
+        </Text>
+        , A full-stack software engineer{" "}
+        <Text as="span" color="blue.600" fontWeight="800" fontSize="16">
           {" "}
           @Cruise
         </Text>{" "}
@@ -48,18 +59,22 @@ export default function AboutMeCard() {
         fontWeight="400"
         mb="10"
         textAlign="center"
+        lineHeight="1.3"
+        overflowWrap="break-word"
       >
         I am most experienced <br />
         in
-        <Text as="span" color="blue.600" fontWeight="700" fontSize="16">
+        <Text as="span" color="blue.300" fontWeight="700" fontSize="16">
           {" "}
           ReactJs
-        </Text>{" "}
-        <Text as="span" color="blue.600" fontWeight="700" fontSize="16">
+        </Text>
+        ,{" "}
+        <Text as="span" color="green.200" fontWeight="700" fontSize="16">
           {" "}
           Nextjs
         </Text>{" "}
-        <Text as="span" color="blue.600" fontWeight="700" fontSize="16">
+        and
+        <Text as="span" color="orange.300" fontWeight="700" fontSize="16">
           {" "}
           React Native
         </Text>{" "}
@@ -77,6 +92,6 @@ export default function AboutMeCard() {
           <Icon fontSize="25" color="primary.100" as={FaInstagramSquare} />
         </Link>
       </HStack>
-    </>
+    </Grid>
   );
 }

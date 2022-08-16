@@ -1,9 +1,4 @@
-import {
-  Grid,
-  GridItem,
-  Box,
-  Text, 
-} from "@chakra-ui/react";
+import { Grid, GridItem, Box, Text } from "@chakra-ui/react";
 import React from "react";
 
 import AboutMeCard from "components/aboutMeCard";
@@ -27,26 +22,32 @@ function Card({ children }: { children: React.ReactElement }) {
 export default function About() {
   return (
     <Grid
-      gridTemplateColumns={["1fr", "1fr", "1fr", "1fr 1fr"]}
+      gridTemplateColumns={{
+        sm: "1fr",
+        md: "1fr",
+        lg: "1fr 1fr",
+        xl: "1fr 1fr",
+        "2xl": "1fr 2fr",
+      }}
       px={["2", "2", "10%"]}
-      py='4'
-      mb='100px'
+      py="4"
+      mb="100px"
       gap={{
-          sm: '8',
-          md: '0'
+        sm: "8",
+        md: "0",
       }}
     >
       <GridItem
         boxShadow="md"
         rounded="md"
         bg="white.100"
-        justifySelf="stretch"  
+        justifySelf={["center","center", "flex-start"]}
         px="5"
         pt="10"
         pb="2"
-        maxW={['1fr', '1fr', '1fr', '60%']}
-        display='grid'
-        placeItems='center'
+        maxW={["1fr", "1fr", "1fr", "60%"]}
+        display="grid"
+        placeItems="center"
       >
         <AboutMeCard />
       </GridItem>
@@ -62,10 +63,15 @@ export default function About() {
         </Text>
         <Card>
           <>
-            <Text color="black.200" fontSize="24" fontWeight="700" mb='4'>
+            <Text color="black.200" fontSize="24" fontWeight="700" mb="4">
               I am a full-stack software engineer
             </Text>
-            <Text color="gray.600" fontSize="16" fontWeight="600" lineHeight='1.6'>
+            <Text
+              color="gray.600"
+              fontSize="16"
+              fontWeight="600"
+              lineHeight="1.6"
+            >
               {` I love to write code. I love to design systems. This is the most
               important thing that I do. Currently I am working remotely `}
               <Text
