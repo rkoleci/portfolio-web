@@ -21,7 +21,7 @@ const MenuLink = ({ path, label }: { path: string; label: string }) => (
         _hover={{
           textDecor: "underline",
         }}
-        borderBottomWidth="1px"
+        borderBottomWidth={["1px", "1px", "0"]}
         borderBottomColor="primary.100"
       >
         {label}
@@ -65,7 +65,7 @@ const Links = () => (
 
 export default function () {
   const { colorMode, toggleColorMode } = useColorMode();
-  const bg = useColorModeValue('gray.200', 'primary.100')
+  const bg = useColorModeValue("gray.200", "primary.100");
 
   return (
     <Box pos="relative">
@@ -90,8 +90,8 @@ export default function () {
             pl="2"
             pr="2"
             borderRadius="4"
-            as='a'
-            href='/'
+            as="a"
+            href="/"
           >
             R
           </Text>
@@ -109,7 +109,9 @@ export default function () {
               mr="8"
               onClick={toggleColorMode}
             >
-              <MoonIcon color={colorMode === 'light' ? 'black.100': 'white.100'} />
+              <MoonIcon
+                color={colorMode === "light" ? "black.100" : "white.100"}
+              />
             </Box>
             <Links />
           </Stack>
@@ -124,7 +126,9 @@ export default function () {
             mr="4"
             onClick={toggleColorMode}
           >
-            <MoonIcon color={colorMode === 'light' ? 'black.100': 'white.100'} />
+            <MoonIcon
+              color={colorMode === "light" ? "black.100" : "white.100"}
+            />
           </Box>
           <input type="checkbox" name="toggle" id="toggle" />
           <label for="toggle">
