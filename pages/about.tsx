@@ -41,7 +41,7 @@ export default function About() {
         boxShadow="md"
         rounded="md"
         bg="white.100"
-        justifySelf={["center","center", "flex-start"]}
+        justifySelf={["center","center", "center", "flex-start"]}
         px="5"
         pt="10"
         pb="2"
