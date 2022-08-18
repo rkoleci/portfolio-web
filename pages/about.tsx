@@ -25,27 +25,30 @@ export default function About() {
       gridTemplateColumns={{
         sm: "1fr",
         md: "1fr",
-        lg: "1fr 1fr",
+        lg: "0.5fr 1fr",
         xl: "1fr 1fr",
         "2xl": "1fr 2fr",
       }}
       px={["2", "2", "10%"]}
       py="4"
       mb="100px"
-      gap={{
-        sm: "8",
-        md: "0",
-      }}
+      gap={'8'}
     >
       <GridItem
         boxShadow="md"
         rounded="md"
         bg="white.100"
-        justifySelf={["center","center", "center", "flex-start"]}
+        justifySelf={["center", "center", "center", "flex-start"]}
         px="5"
         pt="10"
         pb="2"
-        maxW={["1fr", "1fr", "1fr", "60%"]}
+        maxW={{
+          sm: "1fr",
+          md: "1fr",
+          lg: "1fr",
+          xl: "1fr",
+          "2xl": "80%",
+        }}
         display="grid"
         placeItems="center"
       >

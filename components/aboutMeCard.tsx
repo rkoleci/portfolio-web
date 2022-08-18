@@ -80,7 +80,7 @@ export default function AboutMeCard() {
         </Text>{" "}
         .
       </Text>
-      <Image src={"/buy_coffe.webp"} width="70%" mb="4" />
+      <Image src={"/buy_coffe.webp"}  boxSize={'70%'} mb="4"  objectFit="cover" />
       <HStack spacing="8">
         <Link href="https://www.linkedin.com/in/rei-tryreact/" target="_blank">
           <Icon fontSize="25" color="primary.100" as={AiFillLinkedin} />
