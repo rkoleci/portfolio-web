@@ -1,8 +1,10 @@
-import { Container, Center, Text, Stack } from "@chakra-ui/react";
+import { Container, Flex, Text, Stack, Link, Tooltip } from "@chakra-ui/react";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
+import { DownloadIcon } from "@chakra-ui/icons";
 
 import ExperienceListItem from "components/experienceItem";
 import { getJson } from "utils";
+import { useEffect } from "react";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -19,11 +21,16 @@ export default function Experience({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Container p="4">
-      <Center>
+      <Flex justifyContent='center' alignItems='center'>
         <Text color="primary.100" fontSize="3xl" fontWeight="900" mb="8">
           My Experiences
         </Text>
-      </Center>
+        <Tooltip label='Download CV' bg='gray.300' color='black'>
+        <Link color='gray.600' mb='30px' ml='2' opacity='0.6' fontSize='xl' href={'/cv.pdf'} download>
+          <DownloadIcon />
+        </Link> 
+        </Tooltip>
+      </Flex>
       <Stack>
         {experiences.map((item: ExperienceItem) => (
           <ExperienceListItem key={item.id} {...item} mb="8" />
