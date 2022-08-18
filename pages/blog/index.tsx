@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 
 import GridList from "../../components/grid";
@@ -26,7 +26,8 @@ export default function Blog({
 
   return (
     <Box p="4">
-      <GridList data={blog} renderItem={Item} onItemClick={onItemClick} />
+      <Text color='primary.100' fontSize='lg' fontWeight='500' textAlign='center'>Working on this...</Text>
+      {/* <GridList data={blog} renderItem={Item} onItemClick={onItemClick} /> */}
     </Box>
   );
 }
