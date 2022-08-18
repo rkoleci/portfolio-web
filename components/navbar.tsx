@@ -16,7 +16,7 @@ import NextLink from "next/link";
 
 const MenuLink = ({ path, label }: { path: string; label: string }) => (
   <NextLink href={`/${path}`} passHref>
-    <Link color="primary.100" fontWeight="500">
+    <Link color="black.100" fontWeight="500">
       <Text
         _hover={{
           textDecor: "underline",
@@ -95,7 +95,7 @@ export default function () {
           >
             R
           </Text>
-          <Text color="black" fontSize="20" fontWeight="600">
+          <Text color="black.100" fontSize="20" fontWeight="600">
             Rei Koleci
           </Text>
         </Box>
@@ -110,7 +110,7 @@ export default function () {
               onClick={toggleColorMode}
             >
               <MoonIcon
-                color={colorMode === "light" ? "black.100" : "white.100"}
+                color={'black.100'}
               />
             </Box>
             <Links />

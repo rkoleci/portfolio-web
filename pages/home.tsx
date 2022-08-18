@@ -20,7 +20,7 @@ export default function Home() {
           borderRadius="100%"
         />
           <Text
-            color="primary.100"
+            color="green.300"
             fontWeight="900"
             fontSize={['30', '48']}
             mb={['0', '4']}
