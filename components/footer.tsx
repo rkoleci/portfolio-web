@@ -13,7 +13,7 @@ export default function Footer() {
       background="gray.700"
       justifyContent="space-between"
       alignItems="center"
-      px={["4", "20"]}
+      px={["2", '10', '14', "20"]}
       pt="2"
       pb="3"
       display={["block", "flex"]}
