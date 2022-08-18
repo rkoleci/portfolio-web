@@ -6,7 +6,7 @@ interface ProjectItemProps extends ProjectItem {
   onItemClick: () => void;
 }
 
-const colorScheme = {
+export const colorScheme = {
   Reactjs: "blue",
   Typescript: "teal",
   Nextjs: "yellow",
@@ -14,7 +14,7 @@ const colorScheme = {
   ChakraUI: "gray",
 };
 
-type ColorSchemeKey = keyof typeof colorScheme;
+export type ColorSchemeKey = keyof typeof colorScheme;
 
 export default function ProjectListItem({
   title,
@@ -72,10 +72,11 @@ export default function ProjectListItem({
           {skills.map((item: string) => (
             <Tag
               size="lg"
+              fontSize='12'
               variant="solid"
               borderRadius="16px"
               colorScheme={colorScheme[item as ColorSchemeKey]}
-              opacity="0.6"
+              opacity="0.5"
             >
               {item}
             </Tag>

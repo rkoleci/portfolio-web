@@ -1,9 +1,9 @@
 import { Box, Text } from "@chakra-ui/react";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 
-import GridList from "../components/grid";
-import BlogCard from "../components/blogItem";
-import { getJson } from "../utils";
+import GridList from "../../components/grid";
+import BlogCard from "../../components/blogItem";
+import { getJson } from "../../utils";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
