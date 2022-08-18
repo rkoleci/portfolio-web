@@ -1,4 +1,4 @@
-import { Container, Flex, Button, Text, Image } from "@chakra-ui/react";
+import { Container, Flex, Button, Text, Image, Box } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 export default function Home() {
@@ -11,10 +11,7 @@ export default function Home() {
         height="100%"
       >
         <Image
-          boxSize={{
-            sm: "150px",
-            md: "200px",
-          }}
+          boxSize={'200px'}
           objectFit="cover"
           src={
             "https://www.mohammadfaisal.dev/_next/image?url=%2Fstatic%2Fprofile.png&w=640&q=75"
@@ -22,18 +19,26 @@ export default function Home() {
           alt="Rei Koleci"
           borderRadius="100%"
         />
-        <Text color="primary.100" fontWeight="900" fontSize="48" mb="4">
-          Hi, I'm Rei Koleci
-        </Text>
-        <Text
-          color="primary.100"
-          fontWeight="800"
-          fontSize="30"
-          className="home-text-anim home-text-anim-2"
-        />
-        <Text color="primary.100" fontWeight="600" fontSize="18">
-          Typescript | Graphql | Rest
-        </Text>
+          <Text
+            color="primary.100"
+            fontWeight="900"
+            fontSize={['30', '48']}
+            mb={['0', '4']}
+            textAlign="center"
+          >
+            Hi, I'm Rei Koleci
+          </Text>
+        <Box textAlign='center' >
+          <Text
+            color="primary.100"
+            fontWeight="800"
+            fontSize={['20', '30']}
+            className="home-text-anim home-text-anim-2"
+          />
+          <Text color="primary.100" fontWeight="600"  fontSize={['14', '18']}>
+            Typescript | Graphql | Rest
+          </Text>
+        </Box>
         <Button
           px="5rem"
           py="6"
