@@ -1,11 +1,11 @@
-import { Flex, HStack, Link, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Link, Text } from "@chakra-ui/react";
 import { Icon } from "@chakra-ui/react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaGithubSquare, FaInstagramSquare } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <Flex
+    <Box
       position="fixed"
       bottom="0"
       left="0"
@@ -13,11 +13,16 @@ export default function Footer() {
       background="gray.700"
       justifyContent="space-between"
       alignItems="center"
-      px="20"
+      px={["4", "20"]}
       pt="2"
       pb="3"
+      display={["block", "flex"]}
     >
-      <Flex alignItems="center">
+      <Flex
+        alignItems="center"
+        justifyContent={["center", "flex-start"]}
+        mb={["2", "0"]}
+      >
         <Text fontWeight="400" fontSize="14">
           {`© ${new Date().getFullYear()} Rei Koleci`}
         </Text>
@@ -26,7 +31,7 @@ export default function Footer() {
           {`@rei.koleci`}
         </Text>
       </Flex>
-      <HStack spacing="8">
+      <HStack spacing="8" justifyContent={["center", "flex-end"]}>
         <Link href="https://www.linkedin.com/in/rei-tryreact/" target="_blank">
           <Icon fontSize="25" color="gray.100" as={AiFillLinkedin} />
         </Link>
@@ -37,6 +42,6 @@ export default function Footer() {
           <Icon fontSize="25" color="gray.100" as={FaInstagramSquare} />
         </Link>
       </HStack>
-    </Flex>
+    </Box>
   );
 }
