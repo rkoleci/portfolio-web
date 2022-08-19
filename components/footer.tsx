@@ -6,7 +6,10 @@ import { FaGithubSquare, FaInstagramSquare } from "react-icons/fa";
 export default function Footer() {
   return (
     <Box
-      position="fixed"
+      position={{
+        sm: 'absolute',
+        lg: 'fixed'
+      }}
       bottom="0"
       left="0"
       width="100%"
