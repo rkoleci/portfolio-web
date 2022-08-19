@@ -34,7 +34,7 @@ const Links = () => (
   <>
     {[
       {
-        path: "home",
+        path: "/",
         label: "Home",
       },
       {
