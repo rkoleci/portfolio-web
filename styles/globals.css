@@ -66,6 +66,7 @@ a {
 
 #toggle:checked ~ .drop {
   top: 5rem;
+  z-index: 9999;
 } 
 
 /* End */
