@@ -73,10 +73,9 @@ export default function () {
         justify="space-between"
         alignItems="center"
         as="nav"
-        p="6"
+        p={['5', '5', '8']}
         bg={bg}
-        zIndex="2000"
-        maxH="5rem"
+        zIndex="2000"  
       >
         <Box as={Flex} alignItems="center">
           <Text
