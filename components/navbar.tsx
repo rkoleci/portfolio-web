@@ -73,7 +73,7 @@ export default function () {
         justify="space-between"
         alignItems="center"
         as="nav"
-        p={['5', '5', '8']}
+        p={['5', '5', '5', '5', '8']}
         bg={bg}
         zIndex="2000"  
       >
@@ -99,7 +99,7 @@ export default function () {
           </Text>
         </Box>
 
-        <Box display={["none", "none", "block"]}>
+        <Box display={["none", "none", "none", "block"]}>
           <Stack direction="row" spacing={8} pr="8">
             <Box
               _hover={{
@@ -116,7 +116,7 @@ export default function () {
           </Stack>
         </Box>
 
-        <Box display={["block", "block", "none"]}>
+        <Box display={["block", "block", "block", "none"]}>
           <Box
             _hover={{
               cursor: "pointer",
