@@ -56,7 +56,7 @@ export default function ExperienceListItem({
         </Link>
       </Text>
       <Text color="gray.600" fontSize="14" fontWeight="600" ms="1" mb="3">
-        {`${dateFormat(start)} - ${ dateFormat(end)}`}
+        {`${dateFormat(start)} - ${dateFormat(end)}`}
       </Text>
 
       <Text color="primary.100" fontSize="20" fontWeight="600" mb="2">
@@ -64,7 +64,7 @@ export default function ExperienceListItem({
       </Text>
       <Stack mb="4">
         {skills.map((item: string) => (
-          <Flex alignItems="center">
+          <Flex key={item} alignItems="center">
             <CheckIcon color="gray.100" mr="2" fontSize="12px" />
             <Text color="black.200" fontSize="16">
               Member of DASH team that is responsible for monitoring the entire
@@ -79,7 +79,7 @@ export default function ExperienceListItem({
       </Text>
       <Stack mb="4">
         {accomplishments.map((item: string) => (
-          <Flex alignItems="center">
+          <Flex key={item} alignItems="center">
             <CheckIcon color="gray.100" mr="2" fontSize="12px" />
             <Text color="black.200" fontSize="16">
               {item}
@@ -94,6 +94,7 @@ export default function ExperienceListItem({
       <HStack mb="4">
         {skills.map((item: string) => (
           <Tag
+            key={item}
             size="lg"
             fontSize="12"
             variant="solid"

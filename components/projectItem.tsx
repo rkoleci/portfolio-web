@@ -52,6 +52,7 @@ export default function ProjectListItem({
 
         {contributions.map((item: string, index: number) => (
           <Box
+            key={item}
             display="flex"
             justifyContent="flex-start"
             alignItems="center"
@@ -71,8 +72,9 @@ export default function ProjectListItem({
         <HStack mb="4">
           {skills.map((item: string) => (
             <Tag
+              key={item}
               size="lg"
-              fontSize='12'
+              fontSize="12"
               variant="solid"
               borderRadius="16px"
               colorScheme={colorScheme[item as ColorSchemeKey]}

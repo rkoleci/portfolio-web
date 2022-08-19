@@ -4,9 +4,6 @@ import {
   Text,
   Link,
   Stack,
-  Container,
-  Input,
-  HStack,
   VStack,
   useColorMode,
   useColorModeValue,
@@ -58,12 +55,12 @@ const Links = () => (
         label: "Contact",
       },
     ].map((item) => (
-      <MenuLink {...item} />
+      <MenuLink key={item.path} {...item} />
     ))}
   </>
 );
 
-export default function () {
+export default function Navbar () {
   const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("gray.200", "primary.100");
 
@@ -73,9 +70,9 @@ export default function () {
         justify="space-between"
         alignItems="center"
         as="nav"
-        p={['5', '5', '5', '5', '8']}
+        p={["5", "5", "5", "5", "8"]}
         bg={bg}
-        zIndex="2000"  
+        zIndex="2000"
       >
         <Box as={Flex} alignItems="center">
           <Text
@@ -108,9 +105,7 @@ export default function () {
               mr="8"
               onClick={toggleColorMode}
             >
-              <MoonIcon
-                color={'black.100'}
-              />
+              <MoonIcon color={"black.100"} />
             </Box>
             <Links />
           </Stack>
@@ -130,7 +125,7 @@ export default function () {
             />
           </Box>
           <input type="checkbox" name="toggle" id="toggle" />
-          <label for="toggle">
+          <label htmlFor="toggle">
             <HamburgerIcon fontSize="2xl" />
           </label>
 

@@ -3,7 +3,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 export default function Home() {
   return (
-    <Container height="70vh" p='8' px='4'>
+    <Container height="70vh" p="8" px="4">
       <Flex
         direction="column"
         justifyContent="space-between"
@@ -31,7 +31,7 @@ export default function Home() {
           mb={["0", "4"]}
           textAlign="center"
         >
-          Hi, I'm Rei Koleci
+          Hi, Im Rei Koleci
         </Text>
         <Box textAlign="center">
           <Text
