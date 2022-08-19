@@ -11,8 +11,19 @@ import {
 import { MoonIcon, HamburgerIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 
-const MenuLink = ({ path, label }: { path: string; label: string }) => (
-  <NextLink href={`/${path}`} passHref>
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
+const MenuLink = ({
+  path,
+  label,
+  onClick,
+}: {
+  path: string;
+  label: string;
+  onClick: () => void;
+}) => (
+  <NextLink href={`/${path}`} passHref onClick={onClick}>
     <Link color="black.100" fontWeight="500">
       <Text
         _hover={{
@@ -27,32 +38,38 @@ const MenuLink = ({ path, label }: { path: string; label: string }) => (
   </NextLink>
 );
 
-const Links = () => (
+const Links = ({ onClick }: { onClick: () => void }) => (
   <>
     {[
       {
         path: "/",
         label: "Home",
+        onClick: onClick,
       },
       {
         path: "about",
         label: "About me",
+        onClick: onClick,
       },
       {
         path: "blog",
         label: "Blog",
+        onClick: onClick,
       },
       {
         path: "experience",
         label: "Experience",
+        onClick: onClick,
       },
       {
         path: "projects",
         label: "Projects",
+        onClick: onClick,
       },
       {
         path: "contact",
         label: "Contact",
+        onClick: onClick,
       },
     ].map((item) => (
       <MenuLink key={item.path} {...item} />
@@ -60,9 +77,19 @@ const Links = () => (
   </>
 );
 
-export default function Navbar () {
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
   const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("gray.200", "primary.100");
+  const router = useRouter();
+
+  useEffect(() => {
+    router.events.on("routeChangeStart", (url, { shallow }) => {
+      console.log(`App is changing to ${url}`);
+      setOpen(false);
+    });
+  }, []);
+  console.log(111, "open", open);
 
   return (
     <Box pos="relative">
@@ -91,7 +118,13 @@ export default function Navbar () {
           >
             R
           </Text>
-          <Text color="black.100" fontSize="20" fontWeight="600">
+          <Text
+            color="black.100"
+            fontSize="20"
+            fontWeight="600"
+            as="a"
+            href="/"
+          >
             Rei Koleci
           </Text>
         </Box>
@@ -107,7 +140,7 @@ export default function Navbar () {
             >
               <MoonIcon color={"black.100"} />
             </Box>
-            <Links />
+            <Links onClick={() => setOpen(false)} />
           </Stack>
         </Box>
 
@@ -126,12 +159,21 @@ export default function Navbar () {
           </Box>
           <input type="checkbox" name="toggle" id="toggle" />
           <label htmlFor="toggle">
-            <HamburgerIcon fontSize="2xl" />
+            <HamburgerIcon fontSize="2xl" onClick={() => setOpen(true)} />
           </label>
 
-          <Box className="drop" id="dropdown" p="2" pb="6">
+          <Box
+            className="drop"
+            id="dropdown"
+            p="2"
+            pb="6"
+            style={{
+              top: open ? "5rem" : "-350px",
+              zIndex: open ? "9999" : "0",
+            }}
+          >
             <VStack spacing={4}>
-              <Links />
+              <Links onClick={() => setOpen(false)} />
             </VStack>
           </Box>
         </Box>
