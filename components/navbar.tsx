@@ -89,6 +89,10 @@ export default function Navbar() {
     });
   }, []);
 
+  const toggleMenu = () => {
+    setOpen(open => !open)
+  }
+
   return (
     <Box pos="relative">
       <Flex
@@ -159,7 +163,7 @@ export default function Navbar() {
           </Box>
           <input type="checkbox" name="toggle" id="toggle" />
           <label htmlFor="toggle">
-            <HamburgerIcon fontSize="2xl" onClick={() => setOpen(true)} />
+            <HamburgerIcon fontSize="2xl" onClick={toggleMenu} />
           </label>
 
           <Box
@@ -173,7 +177,7 @@ export default function Navbar() {
             }}
           >
             <VStack spacing={4}>
-              <Links onClick={() => setOpen(false)} />
+              <Links onClick={toggleMenu} />
             </VStack>
           </Box>
         </Box>
