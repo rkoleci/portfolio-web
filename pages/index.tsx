@@ -3,7 +3,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 export default function Home() {
   return (
-    <Container height="90vh" p="8" px="4">
+    <Container height="85vh" p="8" px="4">
       <Flex
         direction="column"
         justifyContent="space-between"
@@ -11,7 +11,7 @@ export default function Home() {
         height="100%"
       >
         <Image
-          boxSize={['150px', "200px"]}
+          boxSize='200px'
           objectFit="cover"
           src={
             "https://www.mohammadfaisal.dev/_next/image?url=%2Fstatic%2Fprofile.png&w=640&q=75"

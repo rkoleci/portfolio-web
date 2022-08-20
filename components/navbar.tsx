@@ -151,6 +151,7 @@ export default function Navbar() {
             display="inline-block"
             mr="4"
             onClick={toggleColorMode}
+            hidden
           >
             <MoonIcon
               color={colorMode === "light" ? "black.100" : "white.100"}
