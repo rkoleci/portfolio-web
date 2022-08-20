@@ -25,7 +25,7 @@ export default function Blog({
   const onItemClick = () => {};
 
   return (
-    <Box p="4">
+    <Box p="4" minH='85vh'>
       <Text color='primary.100' fontSize='lg' fontWeight='500' textAlign='center'>Working on this...</Text>
       {/* <GridList data={blog} renderItem={Item} onItemClick={onItemClick} /> */}
     </Box>
