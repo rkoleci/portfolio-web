@@ -85,7 +85,6 @@ export default function Navbar() {
 
   useEffect(() => {
     router.events.on("routeChangeStart", (url, { shallow }) => {
-      console.log(`App is changing to ${url}`);
       setOpen(false);
     });
   }, []);
