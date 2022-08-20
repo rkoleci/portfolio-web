@@ -3,7 +3,7 @@ import { ArrowForwardIcon } from "@chakra-ui/icons";
 
 export default function Home() {
   return (
-    <Container height="70vh" p="8" px="4">
+    <Container height="90vh" p="8" px="4">
       <Flex
         direction="column"
         justifyContent="space-between"
@@ -22,25 +22,19 @@ export default function Home() {
         <Text
           color="green.300"
           fontWeight="900"
-          fontSize={{
-            sm: "30",
-            md: "30",
-            xl: "48",
-            "2xl": "64",
-          }}
+          fontSize={['30', '48']}
           mb={["0", "4"]}
           textAlign="center"
         >
-          Hi, Im Rei Koleci
+          {`Hi, I'm Rei Koleci`}
         </Text>
         <Box textAlign="center">
           <Text
             color="primary.100"
             fontWeight="800"
             fontSize={{
-              sm: "20",
-              md: "30",
-              xl: "48",
+              md: "20",
+              xl: "30",
             }}
             className="home-text-anim home-text-anim-2"
           />
@@ -66,7 +60,7 @@ export default function Home() {
           borderWidth="2px"
           borderStyle="solid"
           borderColor="primary.100"
-          rightIcon={<ArrowForwardIcon />}
+          rightIcon={<ArrowForwardIcon color='primary.100'  />}
           as="a"
           href="/about"
           mb="8"

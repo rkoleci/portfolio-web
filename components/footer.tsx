@@ -18,7 +18,7 @@ export default function Footer() {
       alignItems="center"
       px={["2", "10", "14", "20"]}
       pt="2"
-      pb="3"
+      pb={['1','3']}
       display={["block", "flex"]}
     >
       <Flex
