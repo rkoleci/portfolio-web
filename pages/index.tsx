@@ -11,7 +11,7 @@ export default function Home() {
         height="100%"
       >
         <Image
-          boxSize={"200px"}
+          boxSize={['150px', "200px"]}
           objectFit="cover"
           src={
             "https://www.mohammadfaisal.dev/_next/image?url=%2Fstatic%2Fprofile.png&w=640&q=75"
@@ -20,7 +20,7 @@ export default function Home() {
           borderRadius="100%"
         />
         <Text
-          color="green.300"
+          color="primary.100"
           fontWeight="900"
           fontSize={['30', '48']}
           mb={["0", "4"]}

@@ -89,7 +89,6 @@ export default function Navbar() {
       setOpen(false);
     });
   }, []);
-  console.log(111, "open", open);
 
   return (
     <Box pos="relative">
