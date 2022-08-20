@@ -46,12 +46,12 @@ export default function AboutMeCard() {
         <Text as="span" color="black.400" fontWeight="800" fontSize="16">
           Rei Koleci
         </Text>
-        , A full-stack software engineer{" "}
-        <Text as="span" color="blue.600" fontWeight="800" fontSize="16">
+        , A front-end software engineer{" "}
+        <Text as="a" color="blue.600" fontWeight="800" fontSize="16" href='https://cyabra.com/' target='_blank'>
           {" "}
-          @Cruise
-        </Text>{" "}
-        , working remotely from a small but beautiful country named Bangladesh.
+          @Cyabra
+        </Text>
+        , working remotely from a small but beautiful country named Albania.
       </Text>
       <Text
         color="gray.100"
