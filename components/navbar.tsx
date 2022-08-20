@@ -130,13 +130,14 @@ export default function Navbar() {
         </Box>
 
         <Box display={["none", "none", "none", "block"]}>
-          <Stack direction="row" spacing={8} pr="8">
+          <Stack direction="row" spacing={8} pr="8" >
             <Box
               _hover={{
                 cursor: "pointer",
               }}
               mr="8"
               onClick={toggleColorMode}
+              hidden
             >
               <MoonIcon color={"black.100"} />
             </Box>
