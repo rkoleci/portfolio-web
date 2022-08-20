@@ -8,7 +8,6 @@ import {
   Textarea,
   FormLabel,
   FormControl,
-  Link,
 } from "@chakra-ui/react";
 
 export default function ContactPage() {

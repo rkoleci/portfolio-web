@@ -79,6 +79,13 @@ a {
   opacity: 0.8;
 }
 
+@media only screen and (max-width: 480px) {
+  .contact-input::placeholder {
+    font-size: 14px; 
+  }
+}
+
+
 /* Home Text Animation */
 
 .home-text-anim {
