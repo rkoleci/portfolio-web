@@ -90,6 +90,10 @@ a {
 
 .home-text-anim {
   animation: anim 2s linear infinite forwards;
+  -webkit-animation: anim 2s linear infinite forwards;
+  -moz-animation:  anim 2s linear infinite forwards;
+  -ms-animation: anim 2s linear infinite forwards;
+  -o-animation: anim 2s linear infinite forwards;
   font-size: 20px;
 }
 .home-text-anim::after {
@@ -98,7 +102,14 @@ a {
 
 .home-text-anim-2::after {
   animation: changeLetter 3s linear infinite alternate;
+  -webkit-animation: changeLetter 3s linear infinite alternate;
+  -moz-animation:changeLetter 3s linear infinite alternate;
+  -ms-animation: changeLetter 3s linear infinite alternate;
+  -o-animation:  changeLetter 3s linear infinite alternate;
   animation-delay: 0s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
 }
 
 @keyframes anim {
