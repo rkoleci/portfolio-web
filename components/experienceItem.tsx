@@ -1,4 +1,4 @@
-import { Box, Text, Flex, HStack, Stack, Tag, Link } from "@chakra-ui/react";
+import { Box, Text, Flex, Wrap, Stack, Tag, Link } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
 import { ExperienceItem } from "pages/experience";
@@ -91,7 +91,7 @@ export default function ExperienceListItem({
       <Text color="primary.100" fontSize="20" fontWeight="600" mb="2">
         Skills
       </Text>
-      <HStack mb="4">
+      <Wrap mb="4">
         {skills.map((item: string) => (
           <Tag
             key={item}
@@ -105,7 +105,7 @@ export default function ExperienceListItem({
             {item}
           </Tag>
         ))}
-      </HStack>
+      </Wrap>
     </Box>
   );
 }

@@ -1,4 +1,4 @@
-import { Box, HStack, Text, Tag, Flex, Link } from "@chakra-ui/react";
+import { Box, Wrap, Text, Tag, Flex, Link } from "@chakra-ui/react";
 import { CalendarIcon, CheckIcon, LinkIcon } from "@chakra-ui/icons";
 import { ProjectItem } from "../pages/projects";
 interface ProjectItemProps extends ProjectItem {
@@ -77,7 +77,7 @@ export default function ProjectListItem({
           Skills
         </Text>
 
-        <HStack mb="4">
+        <Wrap mb="4">
           {skills.map((item: string) => (
             <Tag
               key={item}
@@ -91,7 +91,7 @@ export default function ProjectListItem({
               {item}
             </Tag>
           ))}
-        </HStack>
+        </Wrap>
 
         {link ? (
           <Flex alignItems="center" _hover={{ cursor: "pointer" }}>

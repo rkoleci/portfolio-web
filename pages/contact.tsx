@@ -14,9 +14,7 @@ export default function ContactPage() {
   const actionUrl =
     typeof window === "undefined"
       ? "mailto:rkoleci14@gmail.com"
-      : `mailto:rkoleci14@gmail.com?subject=${
-          window.document.getElementsByName("name")[0]
-        }&body=${window.document.getElementsByName("message")[0]}`;
+      : `mailto:rkoleci14@gmail.com?subject=Contact&body=${window.document.getElementsByName("message")[0]}`;
 
   return (
     <form action={actionUrl} method="post">
