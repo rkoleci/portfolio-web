@@ -1,5 +1,5 @@
 import { Grid, Text, Link, Image, HStack } from "@chakra-ui/react";
-import { Icon } from "@chakra-ui/react";
+import { Img, Icon } from "@chakra-ui/react";
 import { AiFillLinkedin } from "react-icons/ai";
 import { FaGithubSquare, FaInstagramSquare } from "react-icons/fa";
 
@@ -11,11 +11,9 @@ export default function AboutMeCard() {
       gridTemplateColumns="1fr"
       justifyItems="center"
     >
-      <Image
-        boxSize={{
-          sm: "150px",
-          md: "200px",
-        }}
+      <Img
+        width='200px'
+        height='200px'
         objectFit="cover"
         src={
           "/avatar.jpg"
@@ -80,7 +78,7 @@ export default function AboutMeCard() {
         </Text>{" "}
         .
       </Text>
-      <Image src={"/buy_coffe.webp"}  boxSize={'70%'} mb="4"  objectFit="cover" alt='buy me a coffee'/>
+      <Img src={"/buy_coffe.webp"}  boxSize={'70%'} mb="4"  objectFit="cover" alt='buy me a coffee'/>
       <HStack spacing="8">
         <Link href="https://www.linkedin.com/in/rei-tryreact/" target="_blank">
           <Icon fontSize="25" color="primary.100" as={AiFillLinkedin} />
