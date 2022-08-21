@@ -1,9 +1,13 @@
 import { Container, Flex, Button, Text, Image, Box } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <Container height="85vh" p="8" px="4">
+      <Head>
+        <title>Portfolio | Rei Koleci</title>
+      </Head>
       <Flex
         direction="column"
         justifyContent="space-between"

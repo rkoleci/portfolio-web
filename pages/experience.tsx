@@ -5,6 +5,7 @@ import { DownloadIcon } from "@chakra-ui/icons";
 import ExperienceListItem from "components/experienceItem";
 import { getJson } from "utils";
 import { useEffect } from "react";
+import Head from "next/head";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -21,14 +22,25 @@ export default function Experience({
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <Container p="4">
-      <Flex justifyContent='center' alignItems='center'>
+      <Head>
+        <title>Experience | Rei Koleci</title>
+      </Head>
+      <Flex justifyContent="center" alignItems="center">
         <Text color="primary.100" fontSize="3xl" fontWeight="900" mb="8">
           My Experiences
         </Text>
-        <Tooltip label='Download CV' bg='gray.300' color='black'>
-        <Link color='gray.600' mb='30px' ml='2' opacity='0.6' fontSize='xl' href={'/cv.pdf'} download>
-          <DownloadIcon />
-        </Link> 
+        <Tooltip label="Download CV" bg="gray.300" color="black">
+          <Link
+            color="gray.600"
+            mb="30px"
+            ml="2"
+            opacity="0.6"
+            fontSize="xl"
+            href={"/cv.pdf"}
+            download
+          >
+            <DownloadIcon />
+          </Link>
         </Tooltip>
       </Flex>
       <Stack>

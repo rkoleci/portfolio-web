@@ -4,6 +4,7 @@ import { GetStaticProps, InferGetStaticPropsType } from "next";
 import GridList from "../../components/grid";
 import BlogCard from "../../components/blogItem";
 import { getJson } from "../../utils";
+import Head from "next/head";
 
 export const getStaticProps: GetStaticProps = async () => {
   return {
@@ -26,6 +27,9 @@ export default function Blog({
 
   return (
     <Box p="4" minH='85vh'>
+       <Head>
+        <title>Blog | Rei Koleci</title>
+      </Head>
       <Text color='primary.100' fontSize='lg' fontWeight='500' textAlign='center'>Working on this...</Text>
       {/* <GridList data={blog} renderItem={Item} onItemClick={onItemClick} /> */}
     </Box>
