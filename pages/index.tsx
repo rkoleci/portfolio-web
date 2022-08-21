@@ -40,6 +40,7 @@ export default function Home() {
               md: "20",
               xl: "30",
             }}
+            display='block'
             className="home-text-anim home-text-anim-2"
           />
           <Text
