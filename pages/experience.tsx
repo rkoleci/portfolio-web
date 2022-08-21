@@ -36,7 +36,7 @@ export default function Experience({
             ml="2"
             opacity="0.6"
             fontSize="xl"
-            href={"/cv.pdf"}
+            href={"/cv-ReiKoleci.pdf"}
             download
           >
             <DownloadIcon />

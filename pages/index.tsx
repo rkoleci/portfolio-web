@@ -18,7 +18,7 @@ export default function Home() {
           boxSize='200px'
           objectFit="cover"
           src={
-            "https://www.mohammadfaisal.dev/_next/image?url=%2Fstatic%2Fprofile.png&w=640&q=75"
+            "/avatar.jpg"
           }
           alt="Rei Koleci"
           borderRadius="100%"
