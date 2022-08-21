@@ -58,7 +58,7 @@
       "Writing unit tests using Jest",
       "Using Redux to manage state"
     ],
-    "skills": ["Reactjs", "Typescript", "Redux", "Mui v4", ""],
+    "skills": ["Reactjs","Redux", "Typescript"],
     "link": "https://play.google.com/store/apps/details?id=io.cartys.PersonaApp&hl=en&gl=US",
     "time": {
       "start": 1586334661,
@@ -80,7 +80,7 @@
       "Writing unit tests using Jest",
       "Using Redux to manage state"
     ],
-    "skills": ["Nextjs", "Typescript", "Redux", "Reat-Query", "Mui v4"],
+    "skills": ["Nextjs", "Typescript", "Redux", "React-Query", "Mui v4"],
     "link": "https://www.sisal.com/eng/offering/games/online/italy",
     "time": {
       "start": 1574929599,

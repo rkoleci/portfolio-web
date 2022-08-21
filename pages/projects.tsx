@@ -31,7 +31,7 @@ export default function Projects({
     <Box p="4">
       <Center>
         <Text color="black.100" fontSize="30px" fontWeight="500" mb="8">
-          Projects that Ive worked on
+          {`Project that I've worked on`}
         </Text>
       </Center>
       <GridList data={projects as Array<ProjectItem>} renderItem={Item} onItemClick={onItemClick} />

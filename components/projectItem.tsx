@@ -1,7 +1,6 @@
 import { Box, HStack, Text, Tag, Flex, Link } from "@chakra-ui/react";
 import { CalendarIcon, CheckIcon, LinkIcon } from "@chakra-ui/icons";
 import { ProjectItem } from "../pages/projects";
-import NextLink from "next/link";
 interface ProjectItemProps extends ProjectItem {
   onItemClick: () => void;
 }
@@ -11,10 +10,16 @@ export const colorScheme = {
   Typescript: "teal",
   Nextjs: "yellow",
   remix: "red",
-  ChakraUI: "gray",
-  'React-Admin': 'blue',
-  'MUI': 'lightblue',
-  'Redux': 'brand',
+  ChakraUI: "red",
+  "React-Admin": "blue",
+  RemixRun: "green",
+  MUI: "blue",
+  "Mui v4": "blue",
+  Redux: "teal",
+  "Mapbox GL": "yellow",
+  Git: "green",
+  Graphql: "purple",
+  "React-Query": "blue",
 };
 
 export type ColorSchemeKey = keyof typeof colorScheme;
@@ -92,12 +97,12 @@ export default function ProjectListItem({
           <Flex alignItems="center" _hover={{ cursor: "pointer" }}>
             <LinkIcon fontSize="14" color="black.300" />
             <Link
-              isExternal
               ml="4"
               color="blue.600"
               textDecoration="underline"
               textDecorationColor="blue.600"
               href={link}
+              target='_blank'
             >
               Demo
             </Link>
