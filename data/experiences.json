@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "company": "Atrax",
-    "companyURL": "https://www.atrax.com",
-    "title": "Software Engineer Level-3 (Remote)",
+    "company": "Cyabra",
+    "companyURL": "https://cyabra.com",
+    "title": "Frontend Developer React.js (Remote)",
     "roles": [
       "Designing and building new components",
-      "Writing unit tests using Jest",
+      "Fixing bugs",
       "Using Redux to manage state"
     ],
     "accomplishments": [
@@ -14,18 +14,18 @@
       "Writing unit tests using Jest",
       "Using Redux to manage state"
     ],
-    "skills": ["Reactjs", "Typescript", "GCP"],
-    "link": "https://www.gethalal.dev",
+    "skills": ["Reactjs", "Typescript", "MUI", "Mapbox GL", "Git"],
+    "link": "https://cyabra.com",
     "time": {
-      "start": 1660244038,
-      "end": 1660244038
+      "start": 1651393861,
+      "end": ""
     }
   },
   {
-    "id": 2,
-    "company": "Atrax",
-    "companyURL": "https://www.atrax.com",
-    "title": "Software Engineer Level-3 (Remote)",
+    "id": 4,
+    "company": "GetHalal",
+    "companyURL": "https://gethalal.de/en/home",
+    "title": "SSR React.js Dev RemixRun (Remote)",
     "roles": [
       "Designing and building new components",
       "Writing unit tests using Jest",
@@ -36,18 +36,40 @@
       "Writing unit tests using Jest",
       "Using Redux to manage state"
     ],
-    "skills": ["Reactjs", "Typescript", "GCP"],
-    "link": "https://www.gethalal.dev",
+    "skills": ["Reactjs", "RemixRun", "Graphql", "Typescript", "ChakraUI"],
+    "link": "https://gethalal.de/en/home",
     "time": {
-      "start": 1660244038,
-      "end": 1660244038
+      "start": 1646727999,
+      "end": 1656318399
+    }
+  },
+  {
+    "id": 5,
+    "company": "Persona Wellness Mobile App",
+    "companyURL": "https://getpersona.app",
+    "title": "React Native Dev (Remote)",
+    "roles": [
+      "Designing and building new components",
+      "Writing unit tests using Jest",
+      "Using Redux to manage state"
+    ],
+    "accomplishments": [
+      "Designing and building new components",
+      "Writing unit tests using Jest",
+      "Using Redux to manage state"
+    ],
+    "skills": ["Reactjs", "Typescript", "Redux", "Mui v4", ""],
+    "link": "https://play.google.com/store/apps/details?id=io.cartys.PersonaApp&hl=en&gl=US",
+    "time": {
+      "start": 1586334661,
+      "end": 1603269061
     }
   },
   {
     "id": 3,
-    "company": "Atrax",
-    "companyURL": "https://www.atrax.com",
-    "title": "Software Engineer Level-3 (Remote)",
+    "company": "Sisal",
+    "companyURL": "https://www.sisal.com/eng/offering/games/online/italy",
+    "title": "Frontend/SSR Dev CRA/Next.js (On-site)",
     "roles": [
       "Designing and building new components",
       "Writing unit tests using Jest",
@@ -58,11 +80,33 @@
       "Writing unit tests using Jest",
       "Using Redux to manage state"
     ],
-    "skills": ["Reactjs", "Typescript", "GCP"],
-    "link": "https://www.gethalal.dev",
+    "skills": ["Nextjs", "Typescript", "Redux", "Reat-Query", "Mui v4"],
+    "link": "https://www.sisal.com/eng/offering/games/online/italy",
     "time": {
-      "start": 1660244038,
-      "end": 1660244038
+      "start": 1574929599,
+      "end": 1644049861
+    }
+  },
+  {
+    "id": 6,
+    "company": "AT Consulting",
+    "companyURL": "https://al.linkedin.com/company/at-consulting-shpk",
+    "title": "React Admin Dev (On-site)",
+    "roles": [
+      "Designing and building new components",
+      "Writing unit tests using Jest",
+      "Using Redux to manage state"
+    ],
+    "accomplishments": [
+      "Designing and building new components",
+      "Writing unit tests using Jest",
+      "Using Redux to manage state"
+    ],
+    "skills": ["React-Admin", "Redux", "MUI"],
+    "link": "",
+    "time": {
+      "start": 1540456261,
+      "end": 1571992261
     }
   }
 ]

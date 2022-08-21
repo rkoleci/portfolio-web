@@ -12,6 +12,9 @@ export const colorScheme = {
   Nextjs: "yellow",
   remix: "red",
   ChakraUI: "gray",
+  'React-Admin': 'blue',
+  'MUI': 'lightblue',
+  'Redux': 'brand',
 };
 
 export type ColorSchemeKey = keyof typeof colorScheme;

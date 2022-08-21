@@ -40,10 +40,10 @@ export default function ExperienceListItem({
         left="-2"
       />
       <Text color="primary.100" fontSize="24" fontWeight="900" mb="2">
-        Software Engineer Level-3 (Remote)
+        {title}
       </Text>
       <Text color="primary.100" fontSize="18" fontWeight="500" mb="3">
-        Cruise LLC -{" "}
+        {`${company} - `} 
         <Link
           target="_blank"
           color="blue.600"
@@ -56,7 +56,7 @@ export default function ExperienceListItem({
         </Link>
       </Text>
       <Text color="gray.600" fontSize="14" fontWeight="600" ms="1" mb="3">
-        {`${dateFormat(start)} - ${dateFormat(end)}`}
+        {`${dateFormat(start)} - ${end ? dateFormat(end) : 'Present'}`}
       </Text>
 
       <Text color="primary.100" fontSize="20" fontWeight="600" mb="2">
