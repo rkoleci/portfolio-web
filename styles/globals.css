@@ -1,26 +1,26 @@
-html { 
+html {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    height: 100%;
+  height: 100%;
 }
-body { 
+body {
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    min-height: 100vh;
-}  
+  min-height: 100vh;
+}
 
 div#__next {
-  min-height: 100%; 
+  min-height: 100%;
 }
 
-main { 
-  min-height: 100%; 
+main {
+  min-height: 100%;
   padding-bottom: 50px;
-} 
+}
 
 a {
   color: inherit;
@@ -43,18 +43,18 @@ a {
 
 /* Menu Bar Hamburger - Dropdown */
 #toggle {
-  position:absolute;
-  appearance:none;
-  cursor:pointer;
-  left:-100%;
-  top:-100%;
+  position: absolute;
+  appearance: none;
+  cursor: pointer;
+  left: -100%;
+  top: -100%;
 }
 
 .drop {
   position: absolute;
   top: -350px;
   left: 0;
-  right: 0; 
+  right: 0;
   transition: top 0.5s cubic-bezier(0.17, 0.04, 0.03, 0.94);
   z-index: 0;
   background: white;
@@ -67,13 +67,13 @@ a {
 #toggle:checked ~ .drop {
   top: 5rem;
   z-index: 9999;
-} 
+}
 
 /* End */
 
-/* Contact Form Input */  
+/* Contact Form Input */
 .contact-input::placeholder {
-  color: #9CA3AF;
+  color: #9ca3af;
   font-weight: 600;
   font-size: 18px;
   opacity: 0.8;
@@ -81,10 +81,9 @@ a {
 
 @media only screen and (max-width: 480px) {
   .contact-input::placeholder {
-    font-size: 14px; 
+    font-size: 14px;
   }
 }
-
 
 /* Home Text Animation */
 
@@ -93,7 +92,7 @@ a {
   font-size: 20px;
 }
 .home-text-anim::after {
-  content: ''
+  content: "";
 }
 
 .home-text-anim-2::after {
@@ -102,38 +101,38 @@ a {
 }
 
 @keyframes anim {
-    0% {
-      transform: translateY(0px);
-      opacity: 1;
-    }
-    20% {
-      transform: translateY(-20px);
-      opacity: 1;
-    }
-    40% {
-      transform: translateY(-40px);
-    }
-    60% {
-      transform: translateY(-60px);
-      opacity: 0;
-    }
-    80% {
-      transform: translateY(-80px);
-      opacity: 0;
-    }
-    100% {
-      opacity: 0;
-    }
+  0% {
+    transform: translateY(0px);
+    opacity: 1;
   }
+  20% {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-40px);
+  }
+  60% {
+    transform: translateY(-60px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 
-  @keyframes changeLetter {
-    0% {
-      content: "ReactJS";
-    }
-    50% {
-      content: "NextJS";
-    }
-    100% {
-      content: "RemixRun";
-    } 
+@keyframes changeLetter {
+  0% {
+    content: "ReactJS";
   }
+  50% {
+    content: "NextJS";
+  }
+  100% {
+    content: "RemixRun";
+  }
+}
