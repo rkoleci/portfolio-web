@@ -98,7 +98,7 @@ a {
 .home-text-anim::after {
   content: "";
 }
-
+  
 .home-text-anim-2::after {
   animation: changeLetter 3s linear infinite alternate;
   -webkit-animation: changeLetter 3s linear infinite alternate;
@@ -108,8 +108,8 @@ a {
   animation-delay: 0s;
   -webkit-animation-delay: 0s;
   -moz-animation-delay: 0s;
-  -o-animation-delay: 0s;
-}
+  -o-animation-delay: 0s; 
+}  
 
 @keyframes anim {
   0% {
@@ -152,3 +152,4 @@ a {
     content: "RemixRun";
   }
 }
+
