@@ -48,7 +48,7 @@ export default function ContactPage() {
           </Text>
           <Box>
             <Flex justifyContent="space-between" mb="4">
-              <FormControl width="full" pr="2">
+              <FormControl width="full" pr="2"  isRequired>
                 <FormLabel
                   color="black.400"
                   fontSize="14"
