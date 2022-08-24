@@ -1,4 +1,4 @@
-import { Container, Flex, Text, Stack, Link, Tooltip } from "@chakra-ui/react";
+import { Container, Flex, Text, VStack, Link, Tooltip } from "@chakra-ui/react";
 import { GetStaticProps, InferGetStaticPropsType } from "next";
 import { DownloadIcon } from "@chakra-ui/icons";
 
@@ -43,11 +43,11 @@ export default function Experience({
           </Link>
         </Tooltip>
       </Flex>
-      <Stack>
+      <VStack spacing='12' align='stretch'>
         {experiences.map((item: ExperienceItem) => (
-          <ExperienceListItem key={item.id} {...item} mb="8" />
+          <ExperienceListItem key={item.id} {...item}   />
         ))}
-      </Stack>
+      </VStack>
     </Container>
   );
 }

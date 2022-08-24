@@ -63,13 +63,10 @@ export default function ExperienceListItem({
         Roles
       </Text>
       <Stack mb="4">
-        {skills.map((item: string) => (
+        {roles.map((item: string) => (
           <Flex key={item} alignItems="center">
             <CheckIcon color="gray.100" mr="2" fontSize="12px" />
-            <Text color="black.200" fontSize="16">
-              Member of DASH team that is responsible for monitoring the entire
-              driverless fleet
-            </Text>
+            <Text color="black.200" fontSize="16">{item}</Text>
           </Flex>
         ))}
       </Stack>

@@ -5,14 +5,15 @@
     "companyURL": "https://cyabra.com",
     "title": "Frontend Developer React.js (Remote)",
     "roles": [
-      "Designing and building new components",
-      "Fixing bugs",
-      "Using Redux to manage state"
+      "Member of Front end team that is responsible for admin panel of the social media AI analyser",
+      "Writing unit tests, code review and UI enhancements",
+      "Regular bug fixing"
     ],
     "accomplishments": [
-      "Designing and building new components",
-      "Writing unit tests using Jest",
-      "Using Redux to manage state"
+      "Moved API calls from redux(action, reducers) to react-query",
+      "Found a stable version of mapbox lib  and all plugins to support our necessities",
+      "Designed a new notification side bar in pure-CSS, drawer menu style",
+      "Added dark mode support based on styled-components theme"
     ],
     "skills": ["Reactjs", "Typescript", "MUI", "Mapbox GL", "Git"],
     "link": "https://cyabra.com",
@@ -27,14 +28,15 @@
     "companyURL": "https://gethalal.de/en/home",
     "title": "SSR React.js Dev RemixRun (Remote)",
     "roles": [
-      "Designing and building new components",
-      "Writing unit tests using Jest",
-      "Using Redux to manage state"
+      "Member of Front end team responsible for ecommerce storefront",
+      "Building features: Cart, Checkout, Email Reset, GridLists",
+      "Query and mutations using GraphQL",
+      "UI using ChakraUI, based on Figma"
     ],
     "accomplishments": [
-      "Designing and building new components",
-      "Writing unit tests using Jest",
-      "Using Redux to manage state"
+      "Contributed in the Payout feature flow",
+      "Code review, ensure coding structure for other devs",
+      "Added support for responsivity on legacy views"
     ],
     "skills": ["Reactjs", "RemixRun", "Graphql", "Typescript", "ChakraUI"],
     "link": "https://gethalal.de/en/home",
@@ -49,14 +51,16 @@
     "companyURL": "https://getpersona.app",
     "title": "React Native Dev (Remote)",
     "roles": [
-      "Designing and building new components",
-      "Writing unit tests using Jest",
-      "Using Redux to manage state"
+      "Setup boilerplate using Expo",
+      "Build UI based on Figma",
+      "Connect to rest API"
     ],
     "accomplishments": [
-      "Designing and building new components",
-      "Writing unit tests using Jest",
-      "Using Redux to manage state"
+      "Setup repo and choose libraries",
+      "Build custom Native nav based on v6",
+      "Build all screens, reusable components",
+      "Handled auth flow with token and rest API",
+      "Build a Schedule feature"
     ],
     "skills": ["Reactjs","Redux", "Typescript"],
     "link": "https://play.google.com/store/apps/details?id=io.cartys.PersonaApp&hl=en&gl=US",
@@ -71,14 +75,14 @@
     "companyURL": "https://www.sisal.com/eng/offering/games/online/italy",
     "title": "Frontend/SSR Dev CRA/Next.js (On-site)",
     "roles": [
-      "Designing and building new components",
-      "Writing unit tests using Jest",
-      "Using Redux to manage state"
+      "Improve legacy websites, part of a major online betting company",
+      "Update certain features, mostly UI",
+      "Regular bug fixing"
     ],
     "accomplishments": [
-      "Designing and building new components",
-      "Writing unit tests using Jest",
-      "Using Redux to manage state"
+      "Fixed bugs on redux, mui, react class components",
+      "Created new UI using mui, css",
+      "Implemented reusable components using DRY methodology"
     ],
     "skills": ["Nextjs", "Typescript", "Redux", "React-Query", "Mui v4"],
     "link": "https://www.sisal.com/eng/offering/games/online/italy",
@@ -93,14 +97,14 @@
     "companyURL": "https://al.linkedin.com/company/at-consulting-shpk",
     "title": "React Admin Dev (On-site)",
     "roles": [
-      "Designing and building new components",
-      "Writing unit tests using Jest",
-      "Using Redux to manage state"
+      "Member of Front end team on React",
+      "Contribute on an admin dashboard site",
+      "Create interface for a CRM"
     ],
     "accomplishments": [
-      "Designing and building new components",
-      "Writing unit tests using Jest",
-      "Using Redux to manage state"
+      "Fetch data from CRM and display on site",
+      "Created an abstraction of MUI Datatable, custom to the CRM",
+      "Redux to manage global state"
     ],
     "skills": ["React-Admin", "Redux", "MUI"],
     "link": "",
