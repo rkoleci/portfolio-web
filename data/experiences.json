@@ -15,7 +15,7 @@
       "Designed a new notification side bar in pure-CSS, drawer menu style",
       "Added dark mode support based on styled-components theme"
     ],
-    "skills": ["Reactjs", "Typescript", "MUI", "Mapbox GL", "Git"],
+    "skills": ["Reactjs", "Typescript", "MUI", "Mapbox GL", "Git", "RTL", "Cypress"],
     "link": "https://cyabra.com",
     "time": {
       "start": 1651393861,

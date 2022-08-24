@@ -31,7 +31,7 @@ export default function About() {
           sm: "1fr",
           md: "1fr",
           lg: "0.5fr 1fr",
-          xl: "1fr 1fr",
+          xl: "0.5fr 1fr",
           "2xl": "1fr 2fr",
         }}
         px={["2", "2", "10%"]}
