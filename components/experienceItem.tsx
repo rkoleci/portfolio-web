@@ -2,7 +2,7 @@ import { Box, Text, Flex, Wrap, Stack, Tag, Link } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
 import { ExperienceItem } from "pages/experience";
-import { colorScheme, ColorSchemeKey } from "components/projectItem";
+import { skillsColorScheme, SkillsColorSchemeKey } from "components/projectItem";
 
 export default function ExperienceListItem({
   title,
@@ -43,17 +43,18 @@ export default function ExperienceListItem({
         {title}
       </Text>
       <Text color="primary.100" fontSize="18" fontWeight="500" mb="3">
-        {`${company} - `} 
-        <Link
+        {`${company} - `}
+      <Link
           target="_blank"
           color="blue.600"
           fontWeight="800"
           fontSize="16"
           href={companyURL}
           textDecor="underline"
+          
         >
           {companyURL}
-        </Link>
+        </Link> 
       </Text>
       <Text color="gray.600" fontSize="14" fontWeight="600" ms="1" mb="3">
         {`${dateFormat(start)} - ${end ? dateFormat(end) : 'Present'}`}
@@ -96,7 +97,7 @@ export default function ExperienceListItem({
             fontSize="12"
             variant="solid"
             borderRadius="16px"
-            colorScheme={colorScheme[item as ColorSchemeKey]}
+            colorScheme={skillsColorScheme[item as SkillsColorSchemeKey]}
             opacity="0.5"
           >
             {item}

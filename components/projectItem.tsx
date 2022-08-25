@@ -5,7 +5,7 @@ interface ProjectItemProps extends ProjectItem {
   onItemClick: () => void;
 }
 
-export const colorScheme = {
+export const skillsColorScheme = {
   Reactjs: "blue",
   Typescript: "teal",
   Nextjs: "yellow",
@@ -20,9 +20,12 @@ export const colorScheme = {
   Git: "green",
   Graphql: "purple",
   "React-Query": "blue",
+  Cypress: 'red',
+  'Jest': 'red',
+  RTL: 'red',
 };
 
-export type ColorSchemeKey = keyof typeof colorScheme;
+export type SkillsColorSchemeKey = keyof typeof skillsColorScheme
 
 export default function ProjectListItem({
   title,
@@ -85,7 +88,7 @@ export default function ProjectListItem({
               fontSize="12"
               variant="solid"
               borderRadius="16px"
-              colorScheme={colorScheme[item as ColorSchemeKey]}
+              colorScheme={skillsColorScheme[item as SkillsColorSchemeKey]}
               opacity="0.5"
             >
               {item}
