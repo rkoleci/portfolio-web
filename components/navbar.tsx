@@ -117,6 +117,11 @@ export default function Navbar() {
             borderRadius="4"
             as="a"
             href="/"
+            _hover={{
+              transform: 'scale(1.05)',
+              transitionDuration: '0.5s',
+              transitionTimingFunction: 'linear',
+            }}
           >
             R
           </Text>
