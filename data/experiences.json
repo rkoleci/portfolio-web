@@ -38,7 +38,7 @@
       "Code review, ensure coding structure for other devs",
       "Added support for responsivity on legacy views"
     ],
-    "skills": ["Reactjs", "RemixRun", "Graphql", "Typescript", "ChakraUI"],
+    "skills": ["Reactjs", "RemixRun", "Graphql", "Typescript", "TailwindCSS"],
     "link": "https://gethalal.de/en/home",
     "time": {
       "start": 1646727999,
